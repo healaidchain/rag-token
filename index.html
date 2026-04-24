@@ -7,20 +7,34 @@
   <style>
     body {
       margin: 0;
-      font-family: Arial;
+      font-family: Arial, sans-serif;
       background: radial-gradient(circle at top, #1f2937, #000);
       color: white;
       text-align: center;
     }
 
     .container {
-      max-width: 900px;
+      max-width: 950px;
       margin: auto;
       padding: 60px 20px;
     }
 
+    .logo {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      object-fit: cover;
+      border: 3px solid #22c55e;
+    }
+
     h1 {
       font-size: 48px;
+      margin: 10px 0;
+    }
+
+    p {
+      color: #d1d5db;
     }
 
     .btn {
@@ -42,14 +56,14 @@
     .section {
       margin-top: 40px;
       padding: 25px;
-      background: rgba(255,255,255,0.05);
+      background: rgba(255,255,255,0.06);
       border-radius: 15px;
     }
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
-      gap: 10px;
+      grid-template-columns: repeat(auto-fit, minmax(160px,1fr));
+      gap: 12px;
       margin-top: 15px;
     }
 
@@ -59,17 +73,30 @@
       border-radius: 10px;
     }
 
+    .address {
+      word-break: break-all;
+      font-size: 14px;
+      color: #d1d5db;
+      margin-top: 12px;
+    }
+
+    .buy-steps {
+      line-height: 1.9;
+      font-size: 16px;
+    }
+
     .social a {
       display: inline-block;
       margin: 8px;
       color: #22c55e;
       text-decoration: none;
+      font-weight: bold;
     }
 
-    .contract {
-      margin-top: 10px;
+    .footer {
+      margin-top: 40px;
       font-size: 13px;
-      color: #ccc;
+      color: #9ca3af;
     }
   </style>
 </head>
@@ -78,57 +105,66 @@
 
 <div class="container">
 
-<h1>🚀 RichAgain (RAG)</h1>
-<p>Community-driven token with early growth potential on BNB Chain</p>
+  <!-- 로고 -->
+  <img class="logo" src="logo.png" alt="RichAgain Logo">
 
-<!-- 주요 버튼 -->
-<div>
-  <a class="btn" href="https://pancakeswap.finance/swap?outputCurrency=0xE1e8e5402195B48206d162fc5f9d250C289a6C9E" target="_blank">BUY RAG</a>
-  <a class="btn white" href="https://www.dextools.io/app/bnb/pair-explorer/0xeb17e65e5785f23fdb8d084b4256aa1a33c80957" target="_blank">CHART</a>
-  <a class="btn white" href="https://www.notion.so/RichAgain-RAG-Whitepaper-34c15fc028bc80fc9903d08e6c4d4630" target="_blank">WHITEPAPER</a>
-</div>
+  <h1>🚀 RichAgain (RAG)</h1>
+  <p>Community-driven token with early growth potential on BNB Chain</p>
 
-<!-- 토큰 정보 -->
-<div class="section">
-<h2>Token Info</h2>
+  <div>
+    <a class="btn" href="https://pancakeswap.finance/swap?outputCurrency=0xE1e8e5402195B48206d162fc5f9d250C289a6C9E" target="_blank">BUY RAG</a>
+    <a class="btn white" href="https://www.dextools.io/app/bnb/pair-explorer/0xeb17e65e5785f23fdb8d084b4256aa1a33c80957" target="_blank">CHART</a>
+    <a class="btn white" href="https://www.notion.so/RichAgain-RAG-Whitepaper-34c15fc028bc80fc9903d08e6c4d4630" target="_blank">WHITEPAPER</a>
+  </div>
 
-<div class="grid">
-  <div class="card">Name<br><b>RichAgain</b></div>
-  <div class="card">Symbol<br><b>RAG</b></div>
-  <div class="card">Network<br><b>BNB Chain</b></div>
-  <div class="card">Supply<br><b>1B</b></div>
-</div>
+  <div class="section">
+    <h2>Token Info</h2>
 
-<div class="contract">
-Contract: 0xE1e8e5402195B48206d162fc5f9d250C289a6C9E
-</div>
+    <div class="grid">
+      <div class="card">Name<br><b>RichAgain</b></div>
+      <div class="card">Symbol<br><b>RAG</b></div>
+      <div class="card">Network<br><b>BNB Chain</b></div>
+      <div class="card">Supply<br><b>1,000,000,000</b></div>
+    </div>
 
-</div>
+    <div class="address">
+      <b>Token Contract:</b><br>
+      0xE1e8e5402195B48206d162fc5f9d250C289a6C9E
+    </div>
 
-<!-- 거래 설명 -->
-<div class="section">
-<h2>How to Buy</h2>
-<p>메타마스크에서 BNB 준비 → 컨트랙트 주소 검색 → 스왑</p>
-<p>Available on PancakeSwap</p>
-</div>
+    <div class="address">
+      <b>PancakeSwap Pair Address:</b><br>
+      0xEb17e65e5785F23fDB8d084B4256Aa1A33c80957
+    </div>
+  </div>
 
-<!-- SNS -->
-<div class="section">
-<h2>Official Links</h2>
+  <div class="section">
+    <h2>How to Buy</h2>
 
-<div class="social">
+    <div class="buy-steps">
+      <p><b>MetaMask:</b> Prepare BNB → Open PancakeSwap → Connect Wallet → Swap BNB to RAG</p>
+      <p><b>Trust Wallet:</b> Prepare BNB → Connect to PancakeSwap → Search RAG contract → Swap</p>
+      <p>Trading available on MetaMask, Trust Wallet, and PancakeSwap.</p>
+    </div>
+  </div>
 
-<a href="https://x.com/healaidchain" target="_blank">🐦 Twitter</a>
-<a href="https://youtube.com/@richagain0423?si=13VgHx82Rwh-ujfH" target="_blank">📺 YouTube</a>
-<a href="https://www.tiktok.com/@richagaintiktok?_r=1&_t=ZS-95mi87NwLvo" target="_blank">🎵 TikTok</a>
-<a href="https://www.instagram.com/richagain_official" target="_blank">📸 Instagram</a>
-<a href="https://www.threads.com/@richagain_official" target="_blank">🧵 Threads</a>
-<a href="https://t.me/RichAgainOfficial1" target="_blank">💬 Telegram</a>
-<a href="https://discord.gg/RJmgkSAtQ" target="_blank">🎮 Discord</a>
+  <div class="section">
+    <h2>Official Links</h2>
 
-</div>
+    <div class="social">
+      <a href="https://x.com/healaidchain" target="_blank">🐦 Twitter</a>
+      <a href="https://youtube.com/@richagain0423?si=13VgHx82Rwh-ujfH" target="_blank">📺 YouTube</a>
+      <a href="https://www.tiktok.com/@richagaintiktok?_r=1&_t=ZS-95mi87NwLvo" target="_blank">🎵 TikTok</a>
+      <a href="https://www.instagram.com/richagain_official" target="_blank">📸 Instagram</a>
+      <a href="https://www.threads.com/@richagain_official" target="_blank">🧵 Threads</a>
+      <a href="https://t.me/RichAgainOfficial1" target="_blank">💬 Telegram</a>
+      <a href="https://discord.gg/RJmgkSAtQ" target="_blank">🎮 Discord</a>
+    </div>
+  </div>
 
-</div>
+  <div class="footer">
+    This website is for informational purposes only and does not constitute financial advice.
+  </div>
 
 </div>
 
